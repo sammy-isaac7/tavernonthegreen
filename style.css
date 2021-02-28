@@ -1,0 +1,320 @@
+@charset "utf-8";
+/* CSS Document */
+
+ * {
+      margin:0;
+      padding:0;
+      font-size:20px;
+      line-height:28px;
+      color: #315202;
+      box-sizing: border-box;
+      -webkit-font-smoothing:antialiased;
+      scroll-behavior: smooth;
+     font-family: "ITC Garamond W01 Book Narrow";
+ }  
+header {
+      position: fixed;
+      background-color: white;
+      width: 100%;
+      top: 0;
+      align-items: center;
+      z-index: 2;
+    }
+
+   h1 {
+      color: #315202;
+      font-family:serif;
+      font-size:48px;
+      text-align: center;
+      padding:20px 0;
+}
+.social-icons i {
+  display: block;
+  text-align: right;
+
+}
+.fa-facebook-square:before {
+    content: "\f082";
+    display: block;
+}
+.social-icons .fa {
+  display: block;
+  float: left;
+  padding-left: 20px;
+  padding-top: 20px;  
+
+}
+ .social-icons .fa a {
+  text-decoration: none;
+  display: block;
+}
+.social-icons a:hover{
+  opacity: .7;
+ color: red;
+
+}
+    nav {
+      background-color: white;
+      text-align: center;
+      width: 100%;
+    }
+    nav ul {
+      display: inline-flex; 
+      list-style: none;
+
+       }
+       nav ul li 
+       {
+        margin: 15px;
+        padding: 15px;
+
+
+       }
+   
+    nav ul li a {
+      text-decoration: none;
+      color: #315202;
+    
+    }
+    nav ul li a:hover
+    {
+      color: #E0FFFF;
+    }
+   .active, nav ul li:hover 
+   {
+    
+    text-decoration: underline;
+    color: #E0FFFF;
+    border-radius: 3px;
+    background-color: #bbc3ad;
+   }
+
+   .sub-menu {
+          
+          display: none;
+          background-color: #bbc3ad;
+          z-index: 1;
+
+   }
+
+    nav ul li:hover .sub-menu
+    {
+       display: block;
+       position: absolute;
+       margin-top: 15px;
+       margin-left: -15px;
+
+    }
+    nav ul li:hover .sub-menu ul
+  {
+    display: block;
+    margin: 10px;
+    background-color: #bbc3ad;
+  }
+
+  nav ul li:hover .sub-menu ul li
+    {
+      width: 100px;
+      padding: 0;
+      border-bottom: 1px dotted #fff;
+      border-radius: 0;
+      text-align: left;
+    }
+
+  nav ul li:hover .sub-menu ul li:last-child
+      {
+        border-bottom: none;
+      }
+
+  main{ 
+    background-image: url(images/cook.jpg);
+    padding-bottom: 400px;
+    padding-top: 400px;
+    color: white;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    clear: both;
+  }
+  
+ .intro h2 {
+    color: white;
+    position:center;
+    font-size:36px;
+    margin-top: -20px;
+  }
+  .intro p {
+    color: white;
+    font-size: 25px;
+
+  }
+    body {
+      font-family: 'EB Garamond', serif;
+      width: 100%;
+      text-align: center;
+
+    }
+
+   section {
+      width:100%;
+      margin:0 auto; 
+      float: left;
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+
+    section div img {
+      width: 440px;
+      display: block;
+      margin-left:auto; 
+      padding-right: auto;
+
+
+   }
+     .menu {
+
+           width: 50%;
+           float: left;
+           padding-right: 100px;
+   }
+    
+   .text p {
+           width: 37%;
+           float: left;
+           text-align: left;
+
+           
+    }
+
+   .text h3 {
+      text-align: center;
+      -webkit-font-smoothing:antialiased;
+      font-size:30px;
+     margin-top: 40px;
+     padding-right: 50px;
+
+    }
+  .text .img {
+      float:left;  
+    margin-top: -70px;
+
+    }
+  .lunch-text  {
+        width: 40%;
+        float: left;
+        padding-left: 50px;
+    }
+        
+   .lunch{
+    background-image:url("images/vegetable.jpg"); 
+    height: 350px;
+    background-position: bottom;
+   bottom: 50px; 
+   background-size: auto;
+   background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    }
+
+     .lunch-img {
+      width: 600px;
+      float: left;
+      padding-top: 50px;
+      padding-left: 50px;
+    }
+    
+    p {
+      margin:15px 0;
+
+    } 
+    section h4{
+       top:30px;
+
+    }
+ 
+      
+.dinner {
+  background-image: url(images/bruschetta.jpg);
+    height: 350px;
+    background-position: bottom;
+   bottom: 50px; 
+   background-size: auto;
+   background-repeat: no-repeat;
+    background-attachment: fixed; 
+}
+
+.dinner-text {
+  
+        width: 40%;
+        float: right;
+       padding-top: 50px;
+       padding-right: 50px;       
+}
+.dinner-img {
+width: 600px;
+float: left;
+padding: 50px;
+}
+section  h2 {
+background-color: white;
+font-size: 20px;
+opacity: .7;
+}
+section h2:hover { 
+    opacity:1;
+    -webkit-transition: opacity 1s ease;
+    transition: opacity 1s ;
+    font-size: 30px;
+ }
+.dessert {
+  background-image: url(images/cakes.jpg);
+  background-attachment: fixed;
+  background-position: bottom;
+  height: 350px;
+  bottom: 50px;
+  opacity: 1; 
+  background-size: auto;
+  background-repeat: no-repeat;
+}
+.dessert-text {
+  width: 40%;
+  float: left;
+ padding: 50px;
+}
+.dessert-img {
+ width: 600px;
+float: left;
+padding: 50px;
+
+  }
+
+
+footer {
+   background-image:url(images/footer.png);
+  background-position: bottom;
+  background-size:cover;
+  height:300px;
+  text-align: center;
+  clear: both;
+
+}
+.site-location__tel{
+  color: #315202;
+}
+.up-arrow {
+  border-color: green transparent;
+  border-style: solid;
+  border-width: 0px 20px 20px 20px;
+  height: 100px;
+  float: right;
+  margin-bottom: 30px;
+  margin-top: -100px;
+}
+
+.up-arrow:hover {
+  opacity: .7;
+}
+.contact {
+  text-align: center;
+  padding-top: 0;
+}
